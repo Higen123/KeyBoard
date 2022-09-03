@@ -1,0 +1,38 @@
+Error-Не удалось добавить событие game: LANGUAGE-03.09.2022 17:00:50
+
+Error-{"error": "Game or event string not specified"}-03.09.2022 17:00:50
+
+Error-Не удалось добавить событие game: LANGUAGE evet: CHANGE-03.09.2022 17:05:53
+
+Error-{"error": "That event is not registered"}-03.09.2022 17:05:53
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE-03.09.2022 17:05:58
+
+Error-Не удалось добавить событие game: LANGUAGE evet: CHANGE-03.09.2022 17:06:03
+
+Error-{"error": "That event is not registered"}-03.09.2022 17:06:03
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_1-03.09.2022 17:30:38
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_2-03.09.2022 17:30:42
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_3-03.09.2022 17:30:48
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_4-03.09.2022 17:30:54
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_5-03.09.2022 17:30:59
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_6-03.09.2022 17:31:04
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_7-03.09.2022 17:31:09
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_8-03.09.2022 17:31:14
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_9-03.09.2022 17:31:20
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_10-03.09.2022 17:31:27
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_11-03.09.2022 17:31:31
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_12-03.09.2022 17:31:36
+
