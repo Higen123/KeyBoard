@@ -100,7 +100,7 @@ namespace Keyboard
             model._event = "CHANGE_";
             model.data = new Data() { value = value };
 
-            for (int i = 1; i < 13; i++)
+            for (int i = 0; i < 12; i++)
             {
                 model._event = "CHANGE_" + i.ToString();
                 await FireEvent(model);

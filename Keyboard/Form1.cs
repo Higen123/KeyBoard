@@ -19,6 +19,8 @@ namespace Keyboard
 
         private readonly HttpClient _client;
 
+        private bool _realyNeedClose= false;
+
         public System.Timers.Timer Timer
         {
             [System.Diagnostics.DebuggerNonUserCode]
@@ -77,9 +79,14 @@ namespace Keyboard
 
             try
             {
+                var procArray = System.Diagnostics.Process.GetProcessesByName(System.Diagnostics.Process.GetCurrentProcess().ProcessName);
+                if (procArray.Length > 1)
+                {
+                    this.Close();
+                }
                 InitilizeNotifyIcon();
                 Initilize();
-               
+
             }
             catch (Exception ex)
             {
@@ -94,7 +101,7 @@ namespace Keyboard
             Timer = new System.Timers.Timer(_config.Timer);
             Timer.Start();
             TimerStatus();
-           
+
 
             string logPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, _config.LogFileName);
 
@@ -105,12 +112,13 @@ namespace Keyboard
             keyboardManager = new KeyboardManager(_client, _logger, _config);
 
             this.textBox2.Text = "LANGUAGE";
-            this.textBox3.Text = "CHANGE";
+            this.textBox3.Text = "CHANGE_" + ((int)comboBox1.SelectedItem).ToString();
             this.numericUpDown2.Value = 100;
 
             countTimerMax = 10000 / (int)_config.Timer;
-            WindowState = FormWindowState.Minimized;
+           // WindowState = FormWindowState.Minimized;
             this.FormClosing += FormCLosing;
+          
         }
 
         private void InitilizeNotifyIcon()
@@ -226,13 +234,22 @@ namespace Keyboard
 
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            _realyNeedClose = true;
             this.Close();
         }
 
         private void FormCLosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = true;
-            WindowState = FormWindowState.Minimized;
+            if (_realyNeedClose)
+            {
+
+            }
+            else
+            {
+                e.Cancel = true;
+                WindowState = FormWindowState.Minimized;
+            }
+       
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -256,13 +273,13 @@ namespace Keyboard
             model.handlers[0].color = new Color();
             model.handlers[0].color.gradient = new Gradient();
             model.handlers[0].color.gradient.zero = new Zero();
-            model.handlers[0].color.gradient.zero.red = 255;
-            model.handlers[0].color.gradient.zero.green = 0;
-            model.handlers[0].color.gradient.zero.blue = 0;
+            model.handlers[0].color.gradient.zero.red = 65;
+            model.handlers[0].color.gradient.zero.green = 242;
+            model.handlers[0].color.gradient.zero.blue = 113;
             model.handlers[0].color.gradient.hundred = new Hundred();
-            model.handlers[0].color.gradient.hundred.red = 0;
-            model.handlers[0].color.gradient.hundred.green = 0;
-            model.handlers[0].color.gradient.hundred.blue = 255;
+            model.handlers[0].color.gradient.hundred.red = 35;
+            model.handlers[0].color.gradient.hundred.green = 183;
+            model.handlers[0].color.gradient.hundred.blue = 236;
 
             model.handlers[0].mode = "color";
 
@@ -288,5 +305,12 @@ namespace Keyboard
             Timer.Enabled = !Timer.Enabled;
             TimerStatus();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.textBox3.Text = "CHANGE_" + ((int)comboBox1.SelectedItem).ToString();
+        }
+
+
     }
 }
