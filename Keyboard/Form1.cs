@@ -133,7 +133,18 @@ namespace Keyboard
                 _settings = new Settings();
             }
 
-            // WindowState = FormWindowState.Minimized;
+            //  WindowState = FormWindowState.Minimized;
+            this.Shown += Form_Shown;
+        }
+
+        private void Form_Shown(object sender, EventArgs e)
+        {
+            //to minimize window
+            this.WindowState = FormWindowState.Minimized;
+
+            //to hide from taskbar
+            this.Hide();
+            notifyIcon1.Visible = true;
         }
 
         private void InitilizeNotifyIcon()
