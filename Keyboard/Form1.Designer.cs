@@ -39,6 +39,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.BindEvent = new System.Windows.Forms.TabPage();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
@@ -57,6 +59,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.contextMenuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.Информация.SuspendLayout();
@@ -138,6 +141,9 @@
             // 
             // BindEvent
             // 
+            this.BindEvent.Controls.Add(this.button6);
+            this.BindEvent.Controls.Add(this.button5);
+            this.BindEvent.Controls.Add(this.button4);
             this.BindEvent.Controls.Add(this.button1);
             this.BindEvent.Controls.Add(this.label5);
             this.BindEvent.Controls.Add(this.numericUpDown2);
@@ -156,6 +162,26 @@
             this.BindEvent.TabIndex = 0;
             this.BindEvent.Text = "BindEvent";
             this.BindEvent.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(427, 32);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 15;
+            this.button5.Text = "RU";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(333, 31);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 14;
+            this.button4.Text = "EN";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button1
             // 
@@ -316,6 +342,16 @@
             this.textBox1.Size = new System.Drawing.Size(768, 110);
             this.textBox1.TabIndex = 3;
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(187, 82);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(133, 23);
+            this.button6.TabIndex = 16;
+            this.button6.Text = "Забиндить все зоны";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -372,5 +408,8 @@
         private TabPage Информация;
         private Label label8;
         private Button button3;
+        private Button button5;
+        private Button button4;
+        private Button button6;
     }
 }

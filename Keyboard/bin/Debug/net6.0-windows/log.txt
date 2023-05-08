@@ -36,3 +36,415 @@ Information-Добавлено событие game: LANGUAGE event: CHANGE_11-03
 
 Information-Добавлено событие game: LANGUAGE event: CHANGE_12-03.09.2022 17:31:36
 
+Error-Не удалось добавить событие game: LANGUAGE evet: CHANGE_6-08.05.2023 13:38:54
+
+Error-{"error": "That event is not registered"}-08.05.2023 13:38:55
+
+Error-Не удалось добавить событие game: LANGUAGE evet: CHANGE_12-08.05.2023 13:39:12
+
+Error-{"error": "That event is not registered"}-08.05.2023 13:39:12
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_0-08.05.2023 13:39:35
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_0-08.05.2023 13:40:20
+
+Error-System.InvalidOperationException: There is an error in XML document (0, 0).
+ ---> System.Xml.XmlException: Root element is missing.
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderSettings.Read3_Settings()
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(Stream stream)
+   at Keyboard.Settings.DeserializeMe() in F:\Файлы\Старый рабочий стол\ЭТОС\projects\Keyboard\Keyboard\Keyboard\Settings.cs:line 45
+   at Keyboard.Form1.Initilize() in F:\Файлы\Старый рабочий стол\ЭТОС\projects\Keyboard\Keyboard\Keyboard\Form1.cs:line 126-08.05.2023 14:16:28
+
+Error-System.InvalidOperationException: There is an error in XML document (0, 0).
+ ---> System.Xml.XmlException: Root element is missing.
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderSettings.Read3_Settings()
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(Stream stream)
+   at Keyboard.Settings.DeserializeMe() in F:\Файлы\Старый рабочий стол\ЭТОС\projects\Keyboard\Keyboard\Keyboard\Settings.cs:line 45
+   at Keyboard.Form1.Initilize() in F:\Файлы\Старый рабочий стол\ЭТОС\projects\Keyboard\Keyboard\Keyboard\Form1.cs:line 126-08.05.2023 14:17:26
+
+Error-System.InvalidOperationException: There is an error in XML document (0, 0).
+ ---> System.Xml.XmlException: Root element is missing.
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderSettings.Read3_Settings()
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(Stream stream)
+   at Keyboard.Settings.DeserializeMe() in F:\Файлы\Старый рабочий стол\ЭТОС\projects\Keyboard\Keyboard\Keyboard\Settings.cs:line 47
+   at Keyboard.Form1.Initilize() in F:\Файлы\Старый рабочий стол\ЭТОС\projects\Keyboard\Keyboard\Keyboard\Form1.cs:line 126-08.05.2023 14:19:20
+
+Error-System.InvalidOperationException: There is an error in XML document (0, 0).
+ ---> System.Xml.XmlException: Root element is missing.
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderSettings.Read3_Settings()
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(Stream stream)
+   at Keyboard.Settings.DeserializeMe() in F:\Файлы\Старый рабочий стол\ЭТОС\projects\Keyboard\Keyboard\Keyboard\Settings.cs:line 48
+   at Keyboard.Form1.Initilize() in F:\Файлы\Старый рабочий стол\ЭТОС\projects\Keyboard\Keyboard\Keyboard\Form1.cs:line 126-08.05.2023 14:22:50
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_0-08.05.2023 14:24:35
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_1-08.05.2023 14:24:38
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_2-08.05.2023 14:24:41
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_3-08.05.2023 14:24:55
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_4-08.05.2023 14:24:57
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_5-08.05.2023 14:24:59
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_6-08.05.2023 14:25:01
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_7-08.05.2023 14:25:04
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_8-08.05.2023 14:25:06
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_9-08.05.2023 14:25:08
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_10-08.05.2023 14:25:10
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_11-08.05.2023 14:25:12
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_0-08.05.2023 14:26:20
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_1-08.05.2023 14:26:23
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_2-08.05.2023 14:26:25
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_3-08.05.2023 14:26:27
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_4-08.05.2023 14:26:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_5-08.05.2023 14:26:56
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_6-08.05.2023 14:26:59
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_7-08.05.2023 14:27:02
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_8-08.05.2023 14:27:04
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_9-08.05.2023 14:27:06
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_10-08.05.2023 14:27:09
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_11-08.05.2023 14:27:11
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_0-08.05.2023 14:38:23
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_0-08.05.2023 14:38:34
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_1-08.05.2023 14:38:34
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_2-08.05.2023 14:38:34
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_3-08.05.2023 14:38:34
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_4-08.05.2023 14:38:34
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_5-08.05.2023 14:38:34
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_6-08.05.2023 14:38:34
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_7-08.05.2023 14:38:34
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_8-08.05.2023 14:38:34
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_9-08.05.2023 14:38:34
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_10-08.05.2023 14:38:34
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_11-08.05.2023 14:38:34
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_0-08.05.2023 14:39:01
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_1-08.05.2023 14:39:22
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_2-08.05.2023 14:39:22
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_3-08.05.2023 14:39:22
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_4-08.05.2023 14:39:22
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_5-08.05.2023 14:39:22
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_6-08.05.2023 14:39:22
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_7-08.05.2023 14:39:22
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_8-08.05.2023 14:39:22
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_9-08.05.2023 14:39:22
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_10-08.05.2023 14:39:22
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_11-08.05.2023 14:39:22
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_0-08.05.2023 14:39:35
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_1-08.05.2023 14:39:37
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_2-08.05.2023 14:39:40
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_2-08.05.2023 14:40:40
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_0-08.05.2023 14:41:17
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_1-08.05.2023 14:41:23
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_2-08.05.2023 14:41:28
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_3-08.05.2023 14:41:28
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_4-08.05.2023 14:41:28
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_5-08.05.2023 14:41:28
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_6-08.05.2023 14:41:28
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_7-08.05.2023 14:41:28
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_8-08.05.2023 14:41:28
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_9-08.05.2023 14:41:28
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_10-08.05.2023 14:41:28
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_11-08.05.2023 14:41:28
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_0-08.05.2023 14:41:51
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_1-08.05.2023 14:41:51
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_2-08.05.2023 14:41:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_3-08.05.2023 14:41:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_4-08.05.2023 14:41:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_5-08.05.2023 14:41:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_6-08.05.2023 14:41:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_7-08.05.2023 14:41:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_8-08.05.2023 14:41:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_9-08.05.2023 14:41:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_10-08.05.2023 14:41:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_11-08.05.2023 14:41:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_0-08.05.2023 14:42:50
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_1-08.05.2023 14:43:01
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_2-08.05.2023 14:43:21
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_3-08.05.2023 14:43:23
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_4-08.05.2023 14:43:24
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_5-08.05.2023 14:43:28
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_6-08.05.2023 14:43:28
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_7-08.05.2023 14:43:28
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_8-08.05.2023 14:43:28
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_9-08.05.2023 14:43:28
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_10-08.05.2023 14:43:28
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_11-08.05.2023 14:43:28
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_0-08.05.2023 14:43:39
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_1-08.05.2023 14:43:39
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_2-08.05.2023 14:43:39
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_3-08.05.2023 14:43:39
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_4-08.05.2023 14:43:39
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_5-08.05.2023 14:43:39
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_6-08.05.2023 14:43:39
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_7-08.05.2023 14:43:39
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_8-08.05.2023 14:43:39
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_9-08.05.2023 14:43:40
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_10-08.05.2023 14:43:40
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_11-08.05.2023 14:43:40
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_0-08.05.2023 14:43:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_1-08.05.2023 14:43:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_2-08.05.2023 14:43:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_3-08.05.2023 14:43:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_4-08.05.2023 14:43:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_5-08.05.2023 14:43:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_6-08.05.2023 14:43:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_7-08.05.2023 14:43:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_8-08.05.2023 14:43:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_9-08.05.2023 14:43:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_10-08.05.2023 14:43:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_11-08.05.2023 14:43:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_0-08.05.2023 14:44:39
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_1-08.05.2023 14:44:39
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_2-08.05.2023 14:44:39
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_3-08.05.2023 14:44:39
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_4-08.05.2023 14:44:39
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_5-08.05.2023 14:44:39
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_6-08.05.2023 14:44:39
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_7-08.05.2023 14:44:39
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_8-08.05.2023 14:44:39
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_9-08.05.2023 14:44:40
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_10-08.05.2023 14:44:40
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_11-08.05.2023 14:44:40
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_0-08.05.2023 14:45:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_1-08.05.2023 14:45:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_2-08.05.2023 14:45:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_3-08.05.2023 14:45:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_4-08.05.2023 14:45:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_5-08.05.2023 14:45:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_6-08.05.2023 14:45:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_7-08.05.2023 14:45:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_8-08.05.2023 14:45:52
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_9-08.05.2023 14:45:53
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_10-08.05.2023 14:45:53
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_11-08.05.2023 14:45:53
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_0-08.05.2023 14:46:17
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_0-08.05.2023 14:46:17
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_1-08.05.2023 14:46:17
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_2-08.05.2023 14:46:17
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_3-08.05.2023 14:46:17
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_4-08.05.2023 14:46:17
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_5-08.05.2023 14:46:17
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_6-08.05.2023 14:46:17
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_7-08.05.2023 14:46:17
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_8-08.05.2023 14:46:17
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_9-08.05.2023 14:46:17
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_10-08.05.2023 14:46:17
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_11-08.05.2023 14:46:17
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_0-08.05.2023 14:46:42
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_1-08.05.2023 14:46:42
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_2-08.05.2023 14:46:42
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_3-08.05.2023 14:46:42
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_4-08.05.2023 14:46:42
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_5-08.05.2023 14:46:42
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_6-08.05.2023 14:46:42
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_7-08.05.2023 14:46:42
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_8-08.05.2023 14:46:42
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_9-08.05.2023 14:46:42
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_10-08.05.2023 14:46:42
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_11-08.05.2023 14:46:42
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_0-08.05.2023 14:48:22
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_1-08.05.2023 14:48:22
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_2-08.05.2023 14:48:22
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_3-08.05.2023 14:48:22
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_4-08.05.2023 14:48:23
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_5-08.05.2023 14:48:23
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_6-08.05.2023 14:48:23
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_7-08.05.2023 14:48:23
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_8-08.05.2023 14:48:23
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_9-08.05.2023 14:48:23
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_10-08.05.2023 14:48:23
+
+Information-Добавлено событие game: LANGUAGE event: CHANGE_11-08.05.2023 14:48:23
+

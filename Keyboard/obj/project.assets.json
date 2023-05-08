@@ -641,7 +641,7 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Winprog\\MyProjects\\EtosBlazor_Private\\packages": {},
+        "C:\\Winprog\\MyProjects\\packages": {},
         "F:\\Файлы\\Старый рабочий стол\\ЭТОС\\projects\\CryptoPro\\libcore-2023.1.18.1\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -701,7 +701,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }

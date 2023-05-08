@@ -1,5 +1,6 @@
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using System.Drawing.Imaging;
 using System.Globalization;
 using System.Net.Http.Headers;
 using System.Runtime.InteropServices;
@@ -19,8 +20,9 @@ namespace Keyboard
 
         private readonly HttpClient _client;
 
-        private bool _realyNeedClose= false;
+        private bool _realyNeedClose = false;
 
+        private Settings _settings;
         public System.Timers.Timer Timer
         {
             [System.Diagnostics.DebuggerNonUserCode]
@@ -116,9 +118,22 @@ namespace Keyboard
             this.numericUpDown2.Value = 100;
 
             countTimerMax = 10000 / (int)_config.Timer;
-           // WindowState = FormWindowState.Minimized;
+         
             this.FormClosing += FormCLosing;
-          
+
+            try
+            {
+                _settings = Settings.DeserializeMe();
+                button4.BackColor = System.Drawing.Color.FromArgb(_settings.MinR, _settings.MinG, _settings.MinB); 
+                button5.BackColor = System.Drawing.Color.FromArgb(_settings.MaxR, _settings.MaxG, _settings.MaxB);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.ToString());
+                _settings = new Settings();
+            }
+
+            // WindowState = FormWindowState.Minimized;
         }
 
         private void InitilizeNotifyIcon()
@@ -249,7 +264,7 @@ namespace Keyboard
                 e.Cancel = true;
                 WindowState = FormWindowState.Minimized;
             }
-       
+
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -260,33 +275,7 @@ namespace Keyboard
 
         private async void button1_Click(object sender, EventArgs e)
         {
-            BindEventModel model = new BindEventModel();
-            model.game = this.textBox2.Text;
-            model._event = this.textBox3.Text;
-            model.min_value = (int)this.numericUpDown1.Value;
-            model.max_value = (int)this.numericUpDown2.Value;
-            model.icon_id = 1;
-            model.handlers = new Handler[1];
-            model.handlers[0] = new Handler();
-            model.handlers[0].devicetype = "rgb-zoned-device";
-            model.handlers[0].zone = this.comboBox1.SelectedItem.ToString();
-            model.handlers[0].color = new Color();
-            model.handlers[0].color.gradient = new Gradient();
-            model.handlers[0].color.gradient.zero = new Zero();
-            model.handlers[0].color.gradient.zero.red = 65;
-            model.handlers[0].color.gradient.zero.green = 242;
-            model.handlers[0].color.gradient.zero.blue = 113;
-            model.handlers[0].color.gradient.hundred = new Hundred();
-            model.handlers[0].color.gradient.hundred.red = 35;
-            model.handlers[0].color.gradient.hundred.green = 183;
-            model.handlers[0].color.gradient.hundred.blue = 236;
-
-            model.handlers[0].mode = "color";
-
-            var result = await keyboardManager.BindEvent(model);
-
-            Log(result);
-
+           await BindEvent2(this.textBox3.Text, this.comboBox1.SelectedItem.ToString());
         }
 
         private async void button2_Click(object sender, EventArgs e)
@@ -311,6 +300,92 @@ namespace Keyboard
             this.textBox3.Text = "CHANGE_" + ((int)comboBox1.SelectedItem).ToString();
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ColorDialog MyDialog = new ColorDialog();
+            // Keeps the user from selecting a custom color.
+            MyDialog.AllowFullOpen = true;
+            MyDialog.FullOpen = true;
+            // Sets the initial color select to the current text color.
+            MyDialog.Color = button4.BackColor;
 
+            // Update the text box color if the user clicks OK 
+            if (MyDialog.ShowDialog() == DialogResult.OK)
+            {
+                button4.BackColor = MyDialog.Color;
+                _settings.MinR = MyDialog.Color.R;
+                _settings.MinG = MyDialog.Color.G;
+                _settings.MinB = MyDialog.Color.B;
+                _settings.SerializeMe();
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ColorDialog MyDialog = new ColorDialog();
+            // Keeps the user from selecting a custom color.
+            MyDialog.AllowFullOpen = true;
+            MyDialog.FullOpen = true;
+            // Allows the user to get help. (The default is false.)
+            // MyDialog.ShowHelp = true;
+            // Sets the initial color select to the current text color.
+            MyDialog.Color = button5.BackColor;
+
+            // Update the text box color if the user clicks OK 
+            if (MyDialog.ShowDialog() == DialogResult.OK)
+            {
+                button5.BackColor = MyDialog.Color;
+                _settings.MaxR = MyDialog.Color.R;
+                _settings.MaxG = MyDialog.Color.G;
+                _settings.MaxB = MyDialog.Color.B;
+                _settings.SerializeMe();
+            }
+        }
+
+        private async Task BindEvent2(string eventName, string zone)
+        {
+            BindEventModel model = new BindEventModel();
+            model.game = this.textBox2.Text;
+            model._event = eventName;
+            model.min_value = (int)this.numericUpDown1.Value;
+            model.max_value = (int)this.numericUpDown2.Value;
+            model.icon_id = 1;
+            model.handlers = new Handler[1];
+            model.handlers[0] = new Handler();
+            model.handlers[0].devicetype = "rgb-zoned-device";
+            model.handlers[0].zone = zone;
+            model.handlers[0].color = new Color();
+            model.handlers[0].color.gradient = new Gradient();
+            model.handlers[0].color.gradient.zero = new Zero();
+            model.handlers[0].color.gradient.zero.red = button4.BackColor.R;
+            model.handlers[0].color.gradient.zero.green = button4.BackColor.G;
+            model.handlers[0].color.gradient.zero.blue = button4.BackColor.B;
+            model.handlers[0].color.gradient.hundred = new Hundred();
+            model.handlers[0].color.gradient.hundred.red = button5.BackColor.R;
+            model.handlers[0].color.gradient.hundred.green = button5.BackColor.G;
+            model.handlers[0].color.gradient.hundred.blue = button5.BackColor.B;
+
+            model.handlers[0].mode = "color";
+
+            var result = await keyboardManager.BindEvent(model);
+
+            Log(result);
+        }
+
+        private async void button6_Click(object sender, EventArgs e)
+        {
+            string zoneNumber = ((int)comboBox1.SelectedItem).ToString();
+            string eventNameTrimmed = "";
+            foreach (var item in zoneNumber)
+            {
+                eventNameTrimmed = this.textBox3.Text.TrimEnd(item);
+            }
+
+            foreach (var item in Enum.GetValues<eZones>())
+            {
+                string eventName = eventNameTrimmed + ((int)item).ToString();
+               await BindEvent2(eventName, item.ToString());
+            }
+        }
     }
 }
